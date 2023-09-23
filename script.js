@@ -1,8 +1,12 @@
 // //your JS code here. If required.
 console.log("nevil")
 const button=document.getElementById("submit");
-function callme(){
-	// event.preventDefault();
+
+
+let signup= document.getElementById("signup-form")
+
+signup.addEventListener("submit",function(event)=>{
+	event.preventDefault();
 	const name=document.getElementById("name").value;
 	const email= document.getElementById("email").value;
 	const password=document.getElementById("password").value;
@@ -21,11 +25,6 @@ function callme(){
 	{
 		alert("Passwords do not match");
 	}
-
-
 	
-}
-
-button.addEventListener('click',callme);
-console.log("hi")
+});
 
